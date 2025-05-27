@@ -1,9 +1,9 @@
-// redirect-server.js
+zz
 const express = require('express');
 const app = express();
 
 // Redirect all incoming requests to Razorpay link
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.redirect(301, 'https://razorpay.me/@newlifewf');
 });
 
